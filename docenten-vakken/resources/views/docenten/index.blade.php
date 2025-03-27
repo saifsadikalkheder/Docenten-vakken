@@ -1,5 +1,3 @@
-<!-- resources/views/docenten/index.blade.php -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +10,6 @@
     <div class="container mt-5">
         <h1>Docenten en Vakken</h1>
 
-        <!-- Tabel van docenten en hun vakken -->
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -27,7 +24,6 @@
                         <td>{{ $docent->naam }}</td>
                         <td>{{ $docent->hobby ?? 'Geen hobby' }}</td>
                         <td>
-                            <!-- Toon de vakken van de docent -->
                             <ul>
                                 @foreach($docent->vakken as $vak)
                                     <li>{{ $vak->naam }} - {{ $vak->beschrijving }}</li>
